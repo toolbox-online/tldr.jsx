@@ -26,50 +26,20 @@ let salutation = random(hello);
 
 export default () => (
   <Markdown className="content">
-    # {salutation}!{Cr}
-    We tried to learn other languages, but since we didn't find a{" "}
-    <Tldr size="small" /> for them it might not say "Welcome". We extend our
-    deepest apologies.
+    ## TL;DR是什么
     {Cr}
-    ### How do I use this thing?
+    TL;DR 是 Too long; Didn't read的缩写。tldr 是社区维护的，用来简化
+    [man手册](https://en.wikipedia.org/wiki/Man_page)的常用最佳实践。
     {Cr}
-    See the input box by the logo? Just type in a command and see the magic
-    happen!
+    ### 怎么用这个工具
     {Cr}
-    Try <code>osx/say</code>, <code>linux/du</code>, or simply <code>man</code>.
+    看到Logo旁边的输入框了吗？只需输入一个命令，就能看到tldr查出的结果！
     {Cr}
-    Some commands are widely available with the same interface, some other have
-    variants per operating system. Currently the <code>tldr-pages</code> project
-    splits commands into 4 categories: common, linux, osx, and sunos.
+    尝试 <code>osx/say</code>, <code>linux/du</code>, 或者简单的<code>man</code>命令
     {Cr}
-    <code>du</code>, for example, is available under both <code>linux</code> and{" "}
-    <code>osx</code>.{Cr}
-    ### What is <Tldr size="small" />?{Cr}
-    This is a web client for a project called <code>tldr-pages</code>; they are
-    a community effort to simplify the beloved man pages with practical
-    examples.
+    一些命令有通用的参数，但是还有一些命令每个操作系统都有所不同。
+    目前 <code>tldr-pages</code> 项目将命令分为 4 类：common、linux、OSX 和 SunOS。
     {Cr}
-    Nifty indeed.
-    {Cr}
-    Read more and join the tldr wagon at{" "}
-    <Link href="https://tldr-pages.github.io/" text="tldr-pages.github.io" />
-    {Cr}
-    ### Do you have any unwanted pieces of trivia for me?
-    {Cr}
-    Well, this small app was built with ES6, type-checked using FlowType, the
-    amazing reactivity is provided by RxJS, and all the rendering is done with
-    React. It's got a nice 12-LOC long Markdown component that works _great_
-    with nested React components. See these links?{" "}
-    <Link
-      href="https://github.com/ostera/tldr.jsx/blob/master/src/components/Welcome.js"
-      text="Check the source"
-    />
-    {Cr}
-    Have a <Link
-      href="https://github.com/ostera/tldr.jsx"
-      text="look inside"
-    />{" "}
-    and feel free to{" "}
-    <Link href="https://github.com/ostera/tldr.jsx/fork" text="fork" />
+    比如说<code>du</code>, 它只能在 <code>linux</code> 和 <code>osx</code>下使用
   </Markdown>
 );

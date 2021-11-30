@@ -20,9 +20,10 @@ type BadgeProps = {
 
 export default ({ color }: BadgeProps) => (
   <a href="https://mixpanel.com/f/partner" rel="nofollow">
-    <img
+    {/* 广告位 */}
+    {/* <img
       src={`//cdn.mxpnl.com/site_media/images/partner/badge_${color}.png`}
       alt="Mobile Analytics"
-    />
+    /> */}
   </a>
 );

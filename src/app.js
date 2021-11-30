@@ -57,19 +57,19 @@ let trackGoogleAnalyticsVisits = ({params: {location}}: StateType): void => {
 }
 
 let initMixpanel = ({params: {debug}}: StateType): void => {
-  Mixpanel.init(process.env.MIXPANEL_TOKEN, {
-    debug
-  })
+  // Mixpanel.init(process.env.MIXPANEL_TOKEN, {
+  //   debug
+  // })
 }
 
 let track = ({params: {command: {platform, name}}, found}: StateType): void => {
   if(name) {
-    Mixpanel.track("Search", {
-      "Query":    `${platform}/${name}`,
-      "Found":    !!found,
-      "Command":  name,
-      "Platform": platform
-    })
+    // Mixpanel.track("Search", {
+    //   "Query":    `${platform}/${name}`,
+    //   "Found":    !!found,
+    //   "Command":  name,
+    //   "Platform": platform
+    // })
   }
 }
 

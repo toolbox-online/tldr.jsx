@@ -20,13 +20,13 @@ let navigate = (history: History) => (path: string) =>
 
 const Oops = () => (
   <section className="content">
-    <h1> Holy! Page not found! </h1>
-    <p> Something has gone terribly wrong. </p>
+    <h1> 啊欧! 没找到数据! </h1>
+    <p> 发生了严重的错误。 </p>
   </section>
 )
 
 const Loading = () => (
-  <section className="content loading"> Loading... </section>
+  <section className="content loading"> 加载中... </section>
 )
 
 export default (props: State) => {

@@ -53,5 +53,8 @@
   },
   "jest": {
     "rootDir": "./src"
+  },
+  "devDependencies": {
+    "sass": "^1.44.0"
   }
 }
