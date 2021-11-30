@@ -29,4 +29,5 @@ jobs:
         ssh-keyscan -t rsa tool.hufeifei.cn >> ~/.ssh/known_hosts
         export APP_DIR=/certbot-nginx-docker/html/tool.hufeifei.cn/tldr-pages/
         ssh -i ~/.ssh/id_rsa www@tool.hufeifei.cn -t "rm -rf $APP_DIR && mkdir -p $APP_DIR"
-        scp -i ~/.ssh/id_rsa -r ./* www@tool.hufeifei.cn:$APP_DIR
+        scp -i ~/.ssh/id_rsa -r build www@tool.hufeifei.cn:$APP_DIR
+        scp -i ~/.ssh/id_rsa -r index.html www@tool.hufeifei.cn:$APP_DIR
