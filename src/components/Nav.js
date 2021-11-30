@@ -38,7 +38,7 @@ export default ({ navigate, version }: NavigateProps) => (
           tabIndex="100"
           type="text"
           onChange={({ target: { value } }) => navigate(value)}
-          placeholder="Command name"
+          placeholder="输入你要查找的命令"
         />
       </section>
       <section className="github-stars">
