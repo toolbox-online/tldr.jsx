@@ -7,3 +7,4 @@ TODO
 .build.sh
 .travis_build
 .bin
+.vscode/
