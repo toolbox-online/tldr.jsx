@@ -35,7 +35,9 @@ export default () => (
     {Cr}
     看到Logo旁边的输入框了吗？只需输入一个命令，就能看到tldr查出的结果！
     {Cr}
-    尝试 <code>osx/say</code>, <code>linux/du</code>, 或者简单的<code>man</code>命令
+    尝试 <b><code>osx/say</code></b>, <b><code>linux/du</code></b>, 或者简单的<b><code>man</code></b>命令
+    {Cr}
+    使用lang参数，比如<b><code>osx/say?lang=zh</code></b>可以查询不同语言的结果
     {Cr}
     一些命令有通用的参数，但是还有一些命令每个操作系统都有所不同。
     目前 <code>tldr-pages</code> 项目将命令分为 4 类：common、linux、OSX 和 SunOS。
