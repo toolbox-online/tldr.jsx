@@ -64,7 +64,7 @@ export default (opts: Options): Module => {
     repository: repository
   })
 
-  let options = ({lang='.zh',name, platform}: Command): GithubGetOptions => ({
+  let options = ({lang='',name, platform}: Command): GithubGetOptions => ({
     path: `pages${lang}/${platform}/${name}.md`,
     branch
   })
