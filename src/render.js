@@ -16,7 +16,7 @@ import type { State } from './Tldr'
 
 let navigate = (history: History) => (path: string) =>
   history.push({...history.location,
-               pathname: `/${path.toLowerCase().trim().replace(' ','-')}`})
+               pathname: `/tldr-pages/${path.toLowerCase().trim().replace(' ','-')}`})
 
 const Oops = () => (
   <section className="content">
