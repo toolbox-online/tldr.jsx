@@ -7,9 +7,6 @@
 import { Observable } from 'rxjs/Observable'
 import { from } from 'rxjs/observable/from'
 import { concat } from 'rxjs/operator/concat'
-
-import { decode } from 'base-64'
-
 import type { AjaxResponse } from 'rxjs/observable/dom/ajax'
 
 import GithubAPI from 'tldr/Github'
@@ -53,6 +50,9 @@ type Module = {
   get(cmd: Command): Observable;
 }
 
+function b64_to_utf8(str) {
+    return decodeURIComponent(escape(window.atob(str)));
+}
 /*******************************************************************************
  * Public API
  *******************************************************************************/
@@ -97,7 +97,7 @@ export default (opts: Options): Module => {
 
   let toPage = (data: Data): Page => ({
     path: data.html_url,
-    body: decode(data.content)
+    body: b64_to_utf8(data.content)
   })
 
   return { get: get }
