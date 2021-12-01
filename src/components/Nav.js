@@ -41,14 +41,14 @@ export default ({ navigate, version }: NavigateProps) => (
           placeholder="输入你要查找的命令"
         />
       </section>
-      <section className="github-stars">
+      {/* <section className="github-stars">
         <GithubButton
           type="star"
           repository="tldr.jsx"
           user="ostera"
           count={true}
           size="large"
-        />
+        /> */}
       </section>
     </section>
   </nav>
