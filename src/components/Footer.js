@@ -6,7 +6,6 @@
 
 import React from "react";
 
-import MixpanelBadge from "tldr/components/MixpanelBadge";
 
 /*******************************************************************************
  * Type Definitions
@@ -21,7 +20,7 @@ type FooterProps = {};
 export default ({}: FooterProps) => (
   <footer>
     <section className="content">
-      <MixpanelBadge color="blue" />
+      {/* 广告位 */}
     </section>
   </footer>
 );
