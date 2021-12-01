@@ -18,10 +18,11 @@ import type { Location } from 'history'
  *******************************************************************************/
 
 let toCommand = (location: Location): Command => {
-  let base = 'tldr-pages';
-  let path = location.pathname.substring(location.pathname.indexOf(base)+base.length)
+  let base = 'tldr-pages'
+  let uri = location.pathname.substring(location.pathname.indexOf(base)+base.length)
+  let [path, searchStr=location.search] = uri.split('?')
   let parts = compact(path.split('/'))
-  let search = parse(location.search)
+  let search = parse(searchStr)
   let res: Command
   switch(parts.length) {
     case 2:
