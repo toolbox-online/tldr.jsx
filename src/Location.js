@@ -18,7 +18,9 @@ import type { Location } from 'history'
  *******************************************************************************/
 
 let toCommand = (location: Location): Command => {
-  let parts = compact(location.pathname.split('/'))
+  let base = 'tldr-pages';
+  let path = location.pathname.substring(location.pathname.indexOf(base)+base.length)
+  let parts = compact(path.split('/'))
   let res: Command
   switch(parts.length) {
     case 2:
